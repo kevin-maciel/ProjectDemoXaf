@@ -4,7 +4,7 @@ using DevExpress.Persistent.BaseImpl;
 
 namespace ProjectDemoXaf.Module.BusinessObjects
 {
-    [NavigationItem("Cajas del CD")]
+    //[NavigationItem("Materiales")]
     public class MateriaPrima : BaseObject
     {
         public MateriaPrima(Session session) : base(session)
