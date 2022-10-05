@@ -1,24 +1,26 @@
 ﻿using DevExpress.Persistent.Base;
-using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
+using DevExpress.Persistent.BaseImpl;
 
 namespace ProjectDemoXaf.Module.BusinessObjects
 {
     [NavigationItem("Cajas del CD")]
-    public class Cajas : BaseObject
+    public class MateriaPrima : BaseObject
     {
-        public Cajas(Session session) : base(session) { }
+        public MateriaPrima(Session session) : base(session)
+        {
+        }
         int id;
         public int Id
         {
             get { return id; }
             set { SetPropertyValue(nameof(Id), ref id, value); }
         }
-        string caja;
-        public string Caja
+        string materiaPrima;
+        public string MateriaPrimas
         {
-            get { return caja; }
-            set { SetPropertyValue(nameof(Caja), ref caja, value); }
+            get { return materiaPrima; }
+            set { SetPropertyValue(nameof(MateriaPrimas), ref materiaPrima, value); }
         }
         string descripcion;
         public string Descripcion
@@ -26,12 +28,5 @@ namespace ProjectDemoXaf.Module.BusinessObjects
             get { return descripcion; }
             set { SetPropertyValue(nameof(Descripcion), ref descripcion, value); }
         }
-        DateTime fecha;
-        public DateTime Fecha
-        {
-            get { return fecha; }
-            set { SetPropertyValue(nameof(Fecha), ref fecha, value); }
-        }
-
     }
 }
